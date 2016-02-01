@@ -12,7 +12,7 @@ function challenge()
   var hits = countHits(experiment, answer);
   var blows = countBlows(experiment, answer);
 
-  printLog("Hits: " + hits + " Blows: " + blows);
+  printLog("" + experiment + " Hits: " + hits + " Blows: " + blows);
 
   if (hits == 4) {
     giveUp();
