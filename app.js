@@ -62,3 +62,9 @@ function generateAnswer()
   }
   return answer;
 }
+
+function getExperiment()
+{
+  var input = document.getElementById("inputAnswer");
+  return input.value;
+}
