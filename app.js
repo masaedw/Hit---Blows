@@ -12,3 +12,9 @@ function giveUp()
 {
   // give up
 }
+
+function printLog(msg)
+{
+  var log = document.getElementById("log");
+  log.value = msg;
+}
