@@ -51,3 +51,14 @@ function randomIndex(len)
 {
   return Math.floor(Math.random() * len);
 }
+
+function generateAnswer()
+{
+  var nums = ["1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  var answer = "";
+  for (var i = 0; i < 4; i++) {
+    var chosen = nums.splice(randomIndex(nums.length), 1);
+    answer += chosen[0];
+  }
+  return answer;
+}
