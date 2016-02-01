@@ -45,3 +45,11 @@ function countBlows(experiment, answer)
 
   return c - countHits(experiment, answer);
 }
+
+// returns [min..max]
+function randomInRange(min, max)
+{
+  var len = max - min;
+  var r = Math.floor(Math.random() * (len + 1));
+  return r + min;
+}
