@@ -1,11 +1,14 @@
-function startNewGame() {
+function startNewGame()
+{
   // start new game
 }
 
-function challenge() {
+function challenge()
+{
   // challenge
 }
 
-function giveUp() {
+function giveUp()
+{
   // give up
 }
