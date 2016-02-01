@@ -16,5 +16,5 @@ function giveUp()
 function printLog(msg)
 {
   var log = document.getElementById("log");
-  log.value = msg;
+  log.value += msg + "\n";
 }
