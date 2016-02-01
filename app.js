@@ -19,11 +19,14 @@ function printLog(msg)
   log.value = msg + "\n" + log.value;
 }
 
-
-
-
-
-
-
-
-
+function countHits(experiment, answer)
+{
+  var len = Math.min(experiment.length, answer.length);
+  var c = 0;
+  for (var i = 0; i < len; i++) {
+    if (experiment[i] == answer[i]) {
+      c++;
+    }
+  }
+  return c;
+}
