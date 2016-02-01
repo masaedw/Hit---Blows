@@ -1,6 +1,9 @@
+var answer = "";
+
 function startNewGame()
 {
-  // start new game
+  answer = generateAnswer();
+  printLog("---- start ----");
 }
 
 function challenge()
