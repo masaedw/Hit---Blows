@@ -30,3 +30,18 @@ function countHits(experiment, answer)
   }
   return c;
 }
+
+function countBlows(experiment, answer)
+{
+  var c = 0;
+  for (var i = 0; i < experiment.length; i++) {
+    for (var j = 0; j < answer.length; j++) {
+      if (experiment[i] == answer[j])
+      {
+        c++;
+      }
+    }
+  }
+
+  return c - countHits(experiment, answer);
+}
