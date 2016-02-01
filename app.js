@@ -8,7 +8,15 @@ function startNewGame()
 
 function challenge()
 {
-  // challenge
+  var experiment = getExperiment();
+  var hits = countHits(experiment, answer);
+  var blows = countBlows(experiment, answer);
+
+  printLog("Hits: " + hits + " Blows: " + blows);
+
+  if (hits == 4) {
+    giveUp();
+  }
 }
 
 function giveUp()
