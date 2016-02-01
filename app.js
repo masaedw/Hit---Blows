@@ -21,7 +21,8 @@ function challenge()
 
 function giveUp()
 {
-  // give up
+  printLog("Well done! The answer is " + answer);
+  startNewGame();
 }
 
 function printLog(msg)
